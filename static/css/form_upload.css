@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-upload {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-upload .checkbox {
+  font-weight: 400;
+}
+.form-upload .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-upload .form-control:focus {
+  z-index: 2;
+}
+
+label.cameraButton {
+  display: inline-block;
+  margin: 1em 0;
+
+  /* Styles to make it look like a button */
+  padding: 0.5em;
+  border: 2px solid #666;
+  border-color: #EEE #CCC #CCC #EEE;
+  background-color: #DDD;
+}
+
+/* Look like a clicked/depressed button */
+label.cameraButton:active {
+  border-color: #CCC #EEE #EEE #CCC;
+}
+
+/* This is the part that actually hides the 'Choose file' text box for camera inputs */
+label.cameraButton input[accept*="camera"] {
+  display: none;
+}
